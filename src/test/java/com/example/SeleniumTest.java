@@ -37,6 +37,16 @@ public class SeleniumTest {
         actionwords.theUrlContains("/dashboard");
     }
 
+    @Test
+    public void newScenario() {
+        // When go to page
+        actionwords.goToPage();
+        // When go to England
+        actionwords.goToEngland();
+        // Then assert England url
+        actionwords.assertEnglandUrl();
+    }
+
     @AfterMethod
     public void stop(){
         actionwords.getDriver().quit();
