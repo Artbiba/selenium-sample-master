@@ -18,7 +18,7 @@ public class SeleniumTest {
         // When I search for "Hiptest"
         actionwords.iSearchForHiptest("Hiptest");
         // Then a link to "Hiptest: Agile test management tool & behavior driven development"
-        actionwords.aLinkToHiptestAgileTestManagementToolBehaviorDrivenDevelopment("hiptest");
+        actionwords.aLinkToHiptestAgileTestManagementToolBehaviorDrivenDevelopment("Hiptest: Agile test management tool & behavior driven development");
     }
 
     @Test
@@ -38,7 +38,7 @@ public class SeleniumTest {
     }
 
     @Test
-    public void newScenario() {
+    public void newScenarioUide04443b80bf8487e93201538a1d3c199() {
         // When go to page
         actionwords.goToPage();
         // When go to England
@@ -47,8 +47,9 @@ public class SeleniumTest {
         actionwords.assertEnglandUrl();
     }
 
-    @AfterMethod
-    public void stop(){
-        actionwords.getDriver().quit();
+    @Test
+    public void new2Uid6009eb5bc9c14e6a8029ff79a0ff2532() {
+        actionwords.goToPage2();
+        actionwords.goToEngland2();
     }
 }
